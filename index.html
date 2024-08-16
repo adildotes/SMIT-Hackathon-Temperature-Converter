@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center justify-center">
+
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+        <h1 class="text-2xl font-bold mb-6 text-center text-gray-700">Temperature Converter</h1>
+
+        <div class="mb-4">
+            <input type="number" id="temperatureInput" placeholder="Enter temperature"
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+
+        <div class="mb-4 flex space-x-4">
+            <select id="fromUnit"
+                class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+
+            <select id="toUnit"
+                class="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <button id="convertButton"
+            class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition duration-300">Convert</button>
+
+        <div id="result" class="mt-6 text-lg font-semibold text-center text-gray-800"></div>
+    </div>
+
+    <footer class="mt-8 text-center text-white">
+        <a href="https://www.linkedin.com/in/adildotes/?originalSubdomain=pk" target="_blank" class="hover:underline">
+            Developed by Adildotes
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
